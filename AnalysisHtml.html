@@ -1,0 +1,11 @@
+<p style="text-align: center;"><span style="text-decoration: underline;"><strong>Coursera Practical Machine Learning Project Work</strong></span><br /><span style="text-decoration: underline;"><strong>Weight Lifting Exercises Prediction</strong></span><br /><span style="text-decoration: underline;"><strong>Author: Vijin K P</strong></span></p>
+<p>&nbsp;</p>
+<p><strong><span style="text-decoration: underline;">Steps/Analysis </span></strong></p>
+<p>1. Removed irrelent features which donot enough data.</p>
+<p>2. Plotted total_accel_belt,total_accel_arm, total_accel_arm_dumbell, toatl_accel_forearm with one another and observed the variation.</p>
+<p><img title="Plots" src="Rplot.png" alt="Plots" /></p>
+<p>3. Also found the correlation between the the features.</p>
+<p>4. Created training model with random forest classifier.</p>
+<p>Classifier: </p>
+<p>Random Forest <br /><br />19622 samples<br />&nbsp;&nbsp; 52 predictor<br />&nbsp;&nbsp;&nbsp; 5 classes: 'A', 'B', 'C', 'D', 'E' <br /><br />No pre-processing<br />Resampling: Cross-Validated (10 fold) <br /><br />Summary of sample sizes: 17660, 17660, 17659, 17661, 17660, 17659, ... <br /><br />Resampling results across tuning parameters:<br /><br />&nbsp; mtry&nbsp; Accuracy&nbsp;&nbsp; Kappa&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Accuracy SD&nbsp;&nbsp; Kappa SD&nbsp; &nbsp;<br />&nbsp;&nbsp; 2&nbsp;&nbsp;&nbsp; 0.9956680&nbsp; 0.9945202&nbsp; 0.0008752622&nbsp; 0.001107394<br />&nbsp; 27&nbsp;&nbsp;&nbsp; 0.9950053&nbsp; 0.9936817&nbsp; 0.0014389425&nbsp; 0.001820688<br />&nbsp; 52&nbsp;&nbsp;&nbsp; 0.9898069&nbsp; 0.9871056&nbsp; 0.0022811810&nbsp; 0.002886015<br /><br />Accuracy was used to select the optimal model using&nbsp; the largest value.<br />The final value used for the model was mtry = 2.</p>
+<p>5. Achieved 100% accuracy with test data.</p>
